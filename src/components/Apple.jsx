@@ -8,7 +8,7 @@ function Apple(props) {
 
   useEffect(() => {
     setAppleData(props.data);
-  },[])
+  },[props.data])
 
   return(
     <div>

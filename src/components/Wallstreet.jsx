@@ -7,7 +7,7 @@ function Wallstreet(props) {
 
   useEffect(() => {
     setWallStreetData(props.data)
-  }, []);
+  }, [props.data]);
   
   return(
     <div>

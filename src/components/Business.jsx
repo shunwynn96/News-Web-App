@@ -8,7 +8,7 @@ function Business(props) {
 
   useEffect(() => {
     setBusinessData(props.data)
-  })
+  }, [props.data])
 
   return(
     <div>

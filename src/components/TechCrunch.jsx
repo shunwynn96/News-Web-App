@@ -8,7 +8,7 @@ function TechCrunch(props) {
   
   useEffect(() => {
     setTechCrunchData(props.data);
-  }, []);
+  }, [props.data]);
 
   return(
     <div>
