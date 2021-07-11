@@ -15,19 +15,20 @@ function Apple(props) {
       <div className="container vadnews">
         <h4>Apple<span className="text-danger"> News</span></h4>
       </div>
-
-      {appleData.map((article, index) => {
-        return (
-          <Article 
-            key={index}
-            img={article.urlToImage}
-            date={article.publishedAt}
-            title={article.title}
-            description={article.description}
-            fullArticleLink={article.url}
-          />
-        )
-      })}
+      <section className="container vidnews" >
+        {appleData.map((article, index) => {
+          return (
+            <Article 
+              key={index}
+              img={article.urlToImage}
+              date={article.publishedAt}
+              title={article.title}
+              description={article.description}
+              fullArticleLink={article.url}
+            />
+          )
+        })}
+      </section>
   </div>
   );
 }

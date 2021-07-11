@@ -14,7 +14,7 @@ function Wallstreet(props) {
       <div className="container vadnews">
         <h4>Wall Street<span className="text-danger"> News</span></h4>
       </div>
-
+      <section className="container vidnews" >
       {wallStreetData.map((article, index) => {
         return (
           <Article 
@@ -27,6 +27,7 @@ function Wallstreet(props) {
           />
         )
       })}
+      </section>
   </div>
   );
 

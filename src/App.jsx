@@ -19,39 +19,48 @@ function App() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:4000/techCrunch")
-    .then((res) => {
-      setTechCrunchData(res.data);
-    }).catch((err) => {
-      console.log(err);
-    })
+    if(techCrunchData.length === 0) {
+      axios.get("http://localhost:4000/techCrunch")
+      .then((res) => {
+        setTechCrunchData(res.data);
+      }).catch((err) => {
+        console.log(err);
+      })
+    }
+    
   }, [])
 
   useEffect(() => {
-    axios.get("http://localhost:4000/apple")
-    .then((res) => {
-      setAppleData(res.data);
-    }).catch((err) => {
-      console.log(err);
-    })
+    if(appleData.length === 0) {
+      axios.get("http://localhost:4000/apple")
+      .then((res) => {
+        setAppleData(res.data);
+      }).catch((err) => {
+        console.log(err);
+      })
+    }
   }, [])
 
   useEffect(() => {
-    axios.get("http://localhost:4000/business")
-    .then((res) => {
-      setBusinessData(res.data);
-    }).catch((err) => {
-      console.log(err);
-    })
+    if(businessData.length === 0) {
+      axios.get("http://localhost:4000/business")
+      .then((res) => {
+        setBusinessData(res.data);
+      }).catch((err) => {
+        console.log(err);
+      })
+    }
   }, [])
 
   useEffect(() => {
-    axios.get("http://localhost:4000/wallStreet")
-    .then((res) => {
-      setWallStreetData(res.data);
-    }).catch((err) => {
-      console.log(err);
-    })
+    if(wallStreetData.length === 0) {
+      axios.get("http://localhost:4000/wallStreet")
+      .then((res) => {
+        setWallStreetData(res.data);
+      }).catch((err) => {
+        console.log(err);
+      })
+    }
   }, [])
 
   return (

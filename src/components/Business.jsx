@@ -15,7 +15,7 @@ function Business(props) {
       <div className="container vadnews">
         <h4>Business<span className="text-danger"> News</span></h4>
       </div>
-
+      <section className="container vidnews" >
       {businessData.map((article, index) => {
         return (
           <Article 
@@ -28,6 +28,7 @@ function Business(props) {
           />
         )
       })}
+      </section>
   </div>
   );
 }

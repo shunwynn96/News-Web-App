@@ -15,7 +15,7 @@ function TechCrunch(props) {
       <div className="container vadnews">
         <h4>TechCrunch<span className="text-danger"> News</span></h4>
       </div>
-
+      <section className="container vidnews" >
       {techCrunchData.map((article, index) => {
         return (
           <Article 
@@ -28,6 +28,7 @@ function TechCrunch(props) {
           />
         );
       })}
+      </section>
   </div>
   );
 }

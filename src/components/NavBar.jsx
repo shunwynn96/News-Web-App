@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-danger">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
         <div className="container">
           <Link className="navbar-brand fw-bold" to="/">THE NEWS</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenavbar">
