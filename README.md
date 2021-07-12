@@ -17,11 +17,15 @@ npm run client-install
 ## Setup
 ```bash
 # Create a .env file in the root directory of the backend server 
-# to store your own API key, you can get it from:
+# to store your API key, you can get it from:
 https://newsapi.org/
 
 # Name the API key in the .env file as API_KEY.
 For example: API_KEY=<Your API key>
+```
 
-# 
+## Run server
+```bash
+# Run the server and client (in root folder)
+npm run dev
 ```
