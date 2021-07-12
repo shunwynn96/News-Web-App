@@ -26,4 +26,9 @@ For example: API_KEY=<Your API key>
 ```bash
 # Run the server and client (in root folder)
 npm run dev
+
+# The app will now be accessible at localhost:3000
 ```
+
+## Author
+🧑 Shun Wynn Kok
