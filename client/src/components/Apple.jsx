@@ -12,10 +12,10 @@ function Apple(props) {
 
   return(
     <div>
-      <div className="container vadnews">
+      <div className="container article-title">
         <h4>Apple<span className="text-danger"> News</span></h4>
       </div>
-      <section className="container vidnews" >
+      <section className="container article-content" >
         {appleData.map((article, index) => {
           return (
             <Article 

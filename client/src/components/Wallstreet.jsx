@@ -11,10 +11,10 @@ function Wallstreet(props) {
   
   return(
     <div>
-      <div className="container vadnews">
+      <div className="container article-title">
         <h4>Wall Street<span className="text-danger"> News</span></h4>
       </div>
-      <section className="container vidnews" >
+      <section className="container article-content" >
       {wallStreetData.map((article, index) => {
         return (
           <Article 

@@ -12,10 +12,10 @@ function TechCrunch(props) {
 
   return(
     <div>
-      <div className="container vadnews">
+      <div className="container article-title">
         <h4>TechCrunch<span className="text-danger"> News</span></h4>
       </div>
-      <section className="container vidnews" >
+      <section className="container article-content" >
       {techCrunchData.map((article, index) => {
         return (
           <Article 

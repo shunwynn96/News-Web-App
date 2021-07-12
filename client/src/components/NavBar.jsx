@@ -13,7 +13,7 @@ function NavBar() {
           <div className="collapse navbar-collapse text-center" id="collapsenavbar">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" to="/about">About Me</Link>
+                <Link className="nav-link active" to="/about">About</Link>
               </li>
               
               <li className="nav-item dropdown">

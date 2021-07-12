@@ -39,18 +39,24 @@ html{
 	text-decoration: none;
     border-bottom: 2px solid red;
 }
-.testimg{
+.article-img{
 	height: 200px;
 	width: 400px;
 	opacity: 1;
 	border-radius: 10px;
 }
-.testimg:hover{
+.article-img:hover{
 	opacity: 0.5;
+}
+
+.article-card {
+	padding: 10px;
+	border-radius: 15px;
 }
 
 /* Contact Sections */
 .contact-us {
+	margin-top: 100px;
 	text-align: center;
 }
 .contact-us h2{
@@ -74,22 +80,55 @@ html{
 	padding-bottom: 30px;
 }
 
-.vadnews{
+.article-title{
 	margin-top: 100px;
 }
-.vadnews h4{
+.article-title h4{
 	margin-top: 20px;
 	padding: 5px;
 	font-size: 36px;
 	text-decoration: none;
     border-bottom: 2px solid red;
 }
-.vidnews{
+.article-content{
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
 .row{
 	margin-top: 20px;
+}
+
+.about {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.about h2{
+	margin-top: 25px;
+	padding-bottom: 10px;
+	text-decoration: none;
+    border-bottom: 2px solid red;
+}
+
+.about-content{
+	margin-top: 50px;
+}
+
+.about-content h3{
+	font-size: 26px;
+}
+
+.contact-me-link {
+	text-decoration: none;
+	padding: 10px;
+}
+
+.contact-me-link a {
+	text-decoration: none;
+}
+
+.contact-me {
+	padding: 20px;;
 }
 
 .footer {
