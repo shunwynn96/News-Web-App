@@ -23,10 +23,9 @@ function App() {
 
   useEffect(() => {
     if(techCrunchData.length === 0) {
-      axios.get("http://localhost:4000/techCrunch")
+      axios.get("https://shielded-ridge-76588.herokuapp.com/techCrunch")
       .then((res) => {
         setTechCrunchData(res.data);
-        console.log("Tech Crunch GET:: ", res.data);
       }).catch((err) => {
         console.log(err);
       })
@@ -36,10 +35,9 @@ function App() {
 
   useEffect(() => {
     if(appleData.length === 0) {
-      axios.get("http://localhost:4000/apple")
+      axios.get("https://shielded-ridge-76588.herokuapp.com/apple")
       .then((res) => {
         setAppleData(res.data);
-        console.log("APPLE GET:: ", res.data);
       }).catch((err) => {
         console.log(err);
       })
@@ -48,10 +46,9 @@ function App() {
 
   useEffect(() => {
     if(businessData.length === 0) {
-      axios.get("http://localhost:4000/business")
+      axios.get("https://shielded-ridge-76588.herokuapp.com/business")
       .then((res) => {
         setBusinessData(res.data);
-        console.log("BUSINESS GET:: ", res.data);
       }).catch((err) => {
         console.log(err);
       })
@@ -60,10 +57,9 @@ function App() {
 
   useEffect(() => {
     if(wallStreetData.length === 0) {
-      axios.get("http://localhost:4000/wallStreet")
+      axios.get("https://shielded-ridge-76588.herokuapp.com/wallStreet")
       .then((res) => {
         setWallStreetData(res.data);
-        console.log("WALL STREET GET:: ", res.data);
       }).catch((err) => {
         console.log(err);
       })

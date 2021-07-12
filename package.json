@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "client-install":"npm install --prefix client",
     "start": "node app.js",
     "server": "node app.js",
     "client": "npm start --prefix client",
@@ -12,6 +13,9 @@
   "keywords": [],
   "author": "Shun Wynn Kok",
   "license": "ISC",
+  "engines": {
+    "node": "14.17.0"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
