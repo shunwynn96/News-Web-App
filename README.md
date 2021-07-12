@@ -14,7 +14,7 @@ npm install
 # Install dependencies for client
 npm run client-install
 ```
-
+## Setup
 ```bash
 # Create a .env file in the root directory of the backend server 
 # to store your own API key, you can get it from:
