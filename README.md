@@ -17,6 +17,7 @@ npm install
 # Install dependencies for backend server
 npm run backend-install
 
-# Create a .env file in the root directory of the backend server to store your own API key and you can get it from:
+# Create a .env file in the root directory of the backend server 
+to store your own API key, you can get it from:
 https://newsapi.org/
 ```
