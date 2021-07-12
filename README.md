@@ -31,5 +31,5 @@ npm run dev
 ```
 
 ## Author
-�(●'◡'●) **Shun Wynn Kok**
+ **Shun Wynn Kok**
 - Github: [@shunwynn96](https://github.com/shunwynn96)
