@@ -1,5 +1,5 @@
 # News-Web-App
-A News Web Application with a frontend built using Reactjs, backend built using Node.js and Express  
+A News Web Application with a frontend built using React, backend built using Node.js and Express  
 and Axios for handling the http requests.
 
 Check out the app: https://shielded-ridge-76588.herokuapp.com/
