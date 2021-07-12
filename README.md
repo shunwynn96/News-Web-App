@@ -11,13 +11,14 @@ and every article has a link attached so that if the user is interested in a top
 ```bash
 # Install dependencies for server
 npm install
+# Install dependencies for client
+npm run client-install
 ```
 
 ```bash
-# Install dependencies for backend server
-npm run backend-install
-
 # Create a .env file in the root directory of the backend server 
 to store your own API key, you can get it from:
 https://newsapi.org/
+# Name the API key in the .env file as API_KEY.
+For example: API_KEY=<Your API key>
 ```
