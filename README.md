@@ -1,6 +1,5 @@
 # News-Web-App
-A News Web Application with a frontend built using React, backend built using Node.js and Express  
-and Axios for handling the http requests.
+A News Web Application with a frontend built using React, backend built using Node.js and Express.
 
 Check out the app: https://the-news-project.herokuapp.com/
 
