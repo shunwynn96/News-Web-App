@@ -22,7 +22,7 @@ function App() {
 
 
   useEffect(() => {
-      axios.get("https://the-news-project.herokuapp.com/science-api")
+      axios.get("http://localhost:4000/science-api")
       .then((res) => {
         setScienceData(res.data);
       }).catch((err) => {
@@ -31,7 +31,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-      axios.get("https://the-news-project.herokuapp.com/sports-api")
+      axios.get("http://localhost:4000/sports-api")
       .then((res) => {
         setSportsData(res.data);
       }).catch((err) => {
@@ -42,7 +42,7 @@ function App() {
 
   useEffect(() => {
    
-      axios.get("https://the-news-project.herokuapp.com/business-api")
+      axios.get("http://localhost:4000/business-api")
       .then((res) => {
         setBusinessData(res.data);
       }).catch((err) => {
@@ -53,7 +53,7 @@ function App() {
 
   useEffect(() => {
     
-      axios.get("https://the-news-project.herokuapp.com/technology-api")
+      axios.get("http://localhost:4000/technology-api")
       .then((res) => {
         setTechnologyData(res.data);
       }).catch((err) => {
