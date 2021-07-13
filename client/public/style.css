@@ -15,6 +15,14 @@ html{
     background-color:#F1C40F;
 }
 
+.title-link {
+	text-decoration: none;
+}
+
+.title-link:hover {
+	opacity: 0.5;
+}
+
 .headerset{
 	padding-top: 50px;
 }

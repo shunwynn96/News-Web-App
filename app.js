@@ -1,8 +1,8 @@
 const express = require("express");
-const techCrunchRouter = require("./routes/techCrunch");
-const appleRouter = require("./routes/apple");
-const wallStreetRouter = require("./routes/wallStreet");
 const businessRouter = require("./routes/business");
+const scienceRouter = require("./routes/science");
+const sportsRouter = require("./routes/sports");
+const technologyRouter = require("./routes/technology");
 const path = require("path");
 const cors = require("cors");
 
@@ -10,10 +10,10 @@ const app = express();
 app.use(cors());
 app.use(express.urlencoded({ extended:true }));
 
-app.use("/apple", appleRouter);
-app.use("/wallStreet", wallStreetRouter);
-app.use("/business", businessRouter);
-app.use("/techCrunch", techCrunchRouter);
+app.use("/business-api", businessRouter);
+app.use("/science-api", scienceRouter);
+app.use("/sports-api", sportsRouter);
+app.use("/technology-api", technologyRouter);
 
 
 app.use(express.static(path.join(__dirname, "build")));

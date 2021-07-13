@@ -5,7 +5,7 @@ require("dotenv").config();
 const router = express.Router();
 
 router.get("/", (req, res, next) => {
-    const url = `https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=${process.env.API_KEY}`
+    const url = `https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=${process.env.API_KEY}`
 
     axios.get(url).then((response) => {
         res.send(response.data.articles);

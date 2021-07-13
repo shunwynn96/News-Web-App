@@ -2,21 +2,21 @@ import React, { useEffect, useState } from "react";
 import Article from "./Article.jsx";
 
 
-function Apple(props) {
+function Sports(props) {
 
-  const [appleData, setAppleData] = useState([]);
+  const [sportsData, setSportsData] = useState([]);
 
   useEffect(() => {
-    setAppleData(props.data);
+    setSportsData(props.data);
   },[props.data])
 
   return(
     <div>
       <div className="container article-title">
-        <h4>Apple<span className="text-danger"> News</span></h4>
+        <h4>Sports<span className="text-danger"> News</span></h4>
       </div>
       <section className="container article-content" >
-        {appleData.map((article, index) => {
+        {sportsData.map((article, index) => {
           return (
             <Article 
               key={index}
@@ -33,4 +33,4 @@ function Apple(props) {
   );
 }
 
-export default Apple;
+export default Sports;

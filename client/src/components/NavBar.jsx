@@ -19,10 +19,10 @@ function NavBar() {
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle text-white" to="" data-bs-toggle="dropdown">News Category</Link>
                 <ul className="dropdown-menu text-center bg-danger">
-                    <li><Link className="nav-link dropdown-link text-white" to="/techcrunch">TechCrunch News</Link></li>
+                    <li><Link className="nav-link dropdown-link text-white" to="/sports">Sports News</Link></li>
                     <li><Link className="nav-link dropdown-link text-white" to="/business">Business News</Link></li>
-                    <li><Link className="nav-link dropdown-link text-white" to="/apple">Apple News</Link></li>
-                    <li><Link className="nav-link dropdown-link text-white" to="/wallstreet">WallStreet News</Link></li>
+                    <li><Link className="nav-link dropdown-link text-white" to="/technology">Technology News</Link></li>
+                    <li><Link className="nav-link dropdown-link text-white" to="/science">Science News</Link></li>
                 </ul>
               </li>
               <li className="nav-item">

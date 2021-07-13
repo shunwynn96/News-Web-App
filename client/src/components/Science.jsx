@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
 import Article from "./Article.jsx";
 
+function Science(props) {
 
-function TechCrunch(props) {
+  const [scienceData, setScienceData] = useState([]);
 
-  const [techCrunchData, setTechCrunchData] = useState([]);
-  
   useEffect(() => {
-    setTechCrunchData(props.data);
+    setScienceData(props.data)
   }, [props.data]);
-
+  
   return(
     <div>
       <div className="container article-title">
-        <h4>TechCrunch<span className="text-danger"> News</span></h4>
+        <h4>Science<span className="text-danger"> News</span></h4>
       </div>
       <section className="container article-content" >
-      {techCrunchData.map((article, index) => {
+      {scienceData.map((article, index) => {
         return (
           <Article 
             key={index}
@@ -26,11 +25,12 @@ function TechCrunch(props) {
             description={article.description}
             fullArticleLink={article.url}
           />
-        );
+        )
       })}
       </section>
   </div>
   );
+
 }
 
-export default TechCrunch;
+export default Science;
