@@ -22,7 +22,7 @@ function App() {
 
 
   useEffect(() => {
-      axios.get("http://localhost:4000/science-api")
+      axios.get(process.env.REACT_APP_API_SCIENCE)
       .then((res) => {
         setScienceData(res.data);
       }).catch((err) => {
@@ -31,7 +31,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-      axios.get("http://localhost:4000/sports-api")
+      axios.get(process.env.REACT_APP_API_SPORTS)
       .then((res) => {
         setSportsData(res.data);
       }).catch((err) => {
@@ -42,7 +42,7 @@ function App() {
 
   useEffect(() => {
    
-      axios.get("http://localhost:4000/business-api")
+      axios.get(process.env.REACT_APP_API_BUSINESS)
       .then((res) => {
         setBusinessData(res.data);
       }).catch((err) => {
@@ -53,7 +53,7 @@ function App() {
 
   useEffect(() => {
     
-      axios.get("http://localhost:4000/technology-api")
+      axios.get(process.env.REACT_APP_API_TECHNOLOGY)
       .then((res) => {
         setTechnologyData(res.data);
       }).catch((err) => {
